@@ -1,9 +1,28 @@
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+//function renderLicenseBadge(license) {}
 
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+//function renderLicenseLink(license) {}
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+//function renderLicenseSection(license) {}
+
+// TODO: Create a function to generate markdown for README
+// function generateMarkdown(data) {
+//   return `# ${data.title}`;
+// }
+
+// function to generate markdown for README
+function generateMarkdown(data) {
+  return `
   
-# hello
-  idk
-  undefined
-  [A deployed version can be viewed here.](undefined)
+# ${data.title}
+  ${data.description}
+  ${data.licenseBadge}
+  [A deployed version can be viewed here.](${data.URL})
   
 ---
 ## Contents
@@ -19,7 +38,7 @@
 6. [Authors and acknowledgment](#authors%20and%20acknowledgment)
 ---
 ## About
-  undefined
+  ${data.about}
 ---
 ## User Story
   
@@ -32,14 +51,14 @@
   ![]()
 ---
 ## Installation:
-  undefined
+  ${data.installation}
   To clone the repo:
   
-      git clone undefined
+      git clone ${data.clone}
   
 ---
 ## License
-  License used for this project - undefined
+  License used for this project - ${data.license}
   * For more information on license types, please reference this website
   for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
 ---
@@ -55,12 +74,18 @@
   Following a code review, your feature will be merged.
 ---
 ## Tests:
-  undefined
+  ${data.test}
 ---
 ## Authors and Acknowledgments
-  undefined
+  ${data.author}
 ---
 ## Contact Information:
-* GitHub Username: undefined
-* GitHub Email: undefined
+* GitHub Username: ${data.userName}
+* GitHub Email: ${data.userEmail}
   
+`;
+}
+
+
+
+module.exports = generateMarkdown;
