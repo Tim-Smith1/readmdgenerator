@@ -4,15 +4,15 @@ const questions = [
         message: 'What is the title of your project?',
         name: 'title',
     },
-    {
-        type: 'input',
-        message: 'Please enter a description for your READEME.md?',
-        name: 'description',
-    },
     // {
-    //    type: 'input', //possibly list
-    //     message: 'Please enter Table of Contents?',
-    //     name: 'tableofcontents',
+    //     type: 'input',
+    //     message: 'Please enter a description for your READEME.md?',
+    //     name: 'description',
+    // },
+    // {
+    //    type: 'input',
+    //     message: 'Please tell me about your project?',
+    //     name: 'about',
     // },
     // {
     //     type: 'input',
@@ -21,28 +21,43 @@ const questions = [
     // },
     // {
     //     type: 'input',
-    //     message: 'Usage?',
-    //     name: 'usage',
+    //     message: 'What link can I use to clone your repo??',
+    //     name: 'repolink',
     // },
-    //{
-    //   type: 'input', // choices //function renderLicenseSection(license) {}
-    //     message: 'What is your Contributing?',
-    //     name: 'license',
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Please select any licences used?',
+        choices: [
+          'none',
+          'Apache',
+          'Boost',
+          'GNU AGPLv3',
+          'GNU LGPLv3',
+          'GNU GPLv3',
+          'MIT',
+          'Mozilla',
+        ],
+    },
+    // {
+    //     type: 'input', 
+    //     message: 'test?',
+    //     name: 'test',
     // },
     // {
     //     type: 'input', 
-    //     message: 'Who contributed to thisfhgbfgbdflg?',
-    //     name: 'contributing',
+    //     message: 'Who is the author, any contributors?',
+    //     name: 'author',
     // },
     // {
     //     type: 'input', 
-    //     message: 'What is your Tests gkhmnfghnfglkh?',
-    //     name: 'tests',
+    //     message: 'What is your GitHub username?',
+    //     name: 'gituser',
     // },
     // {
     //     type: 'input', 
-    //     message: 'What is your Questions wevrfwuervwehbfjhf?',
-    //     name: 'questions',
+    //     message: 'What is your GitHub email?',
+    //     name: 'giturl',
     // },
 ]
 

@@ -1,35 +1,23 @@
 
   
-# hi
-  bye
+# zzzz
   undefined
+
+  [![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+
   [A deployed version can be viewed here.](undefined)
   
 ---
 ## Contents
 1. [About](#about)
-    1. [User Story](#user%20story)
-    2. [Acceptance criteria](#acceptance%20criteria)
-    3. [Visuals](#visuals)
-    4. [Build](#build)
 2. [Installation](#installation)
 3. [License](#license)
 4. [Contributing](#contributing)
 5. [Tests](#tests)
-6. [Authors and acknowledgment](#authors%20and%20acknowledgment)
+6. [Authors and Acknowledgments](#authors-and-acknowledgments)
 ---
 ## About
   undefined
----
-## User Story
-  
----
-## Acceptance Criteria
-  
-  
----
-## Visuals:
-  ![]()
 ---
 ## Installation:
   undefined
@@ -39,7 +27,7 @@
   
 ---
 ## License
-  License used for this project - undefined
+  License used for this project - Apache
   * For more information on license types, please reference this website
   for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
 ---
