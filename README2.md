@@ -1,10 +1,8 @@
+# READMEGENERATOR
 
-  
-# test
+  This is a program that will serve as a template to generate README.md files
 
-  testing
-
-  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   [A deployed version can be viewed here.](undefined)
   
@@ -19,14 +17,14 @@
 7. [Authors and Acknowledgments](#authors-and-acknowledgments)
 ---
 ## About
-  hello
+  This README.me generator will allow users to create a README.md file without having to create it from scratch. This will save users time by not having to spend time recreating the document and all the markdown that would be needed.
 ---
 ## Installation:
-  test
+  Clone the repo from GitHub using the repo link below
 
   To clone the repo:
   
-      git clone test
+      git clone git@github.com:Tim-Smith1/readmdgenerator.git
   
       This app is dependant on -npm i inquirer@8.2.4
 ---
@@ -36,9 +34,9 @@ I want to create a README generator
 So that I can quickly create a professional README.md file for a new projects
 ---
 ## License
-  License used for this project - GNU AGPLv3
+  License used for this project - Apache
 
-  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   * For more information on license types, please reference this website
   for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
@@ -55,12 +53,12 @@ So that I can quickly create a professional README.md file for a new projects
   After a code review, your feature may be merged.
 ---
 ## Tests:
-  test
+  Only manual testing was performed on this app. Future improvements will us Jest.
 ---
 ## Authors and Acknowledgments
-  me
+   Tim Smith as well as Study groups and help from TA Sam Adams.
 ---
 ## Contact Information:
-* GitHub Username: hi
-* GitHub Email: hi
+* GitHub Username: Tim-Smith1
+* GitHub Email: timnotreal@gmail.com
   

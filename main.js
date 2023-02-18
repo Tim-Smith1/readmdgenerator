@@ -2,16 +2,15 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const questions = require('./utils/questions');
-const renderLicenseBadge = require('./utils/renderLicenseBadge');
+//const renderLicenseBadge = require('./utils/renderLicenseBadge');
 
 function init() {
 inquirer
     .prompt(questions)
     
 .then((data) => {
-    //function writeToFile(fileName, data) {}
     
-    fs.writeFile(`${data.title}.md`, generateMarkdown(data), (err) =>
+    fs.writeFile(`README.md`, generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log('README.md Created!'))
     //data.renderLicenseBadge = renderLicenseBadge(data.license);
   }

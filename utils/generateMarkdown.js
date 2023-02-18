@@ -1,13 +1,5 @@
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-//function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-//function renderLicenseSection(license) {}
-
-function renderLicenseBadge(license) {
+function renderLicenseBadge(license) 
+{
   if (license === "GNU AGPLv3") {
     return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
   } else if (license === "GNU GPLv3") {
@@ -25,16 +17,15 @@ function renderLicenseBadge(license) {
   }
 }
 
-
-
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
   
 # ${data.title}
+
   ${data.description}
 
-  ${renderLicenseBadge(data)}
+  ${renderLicenseBadge(data.license)}
 
   [A deployed version can be viewed here.](${data.URL})
   
@@ -53,31 +44,36 @@ function generateMarkdown(data) {
 ---
 ## Installation:
   ${data.installation}
+
   To clone the repo:
   
-      git clone ${data.clone}
+      git clone ${data.repolink}
   
+      This app is dependant on -npm i inquirer@8.2.4
 ---
 ## Usage
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+
+I want to create a README generator
+So that I can quickly create a professional README.md file for a new projects
 ---
 ## License
   License used for this project - ${data.license}
+
+  ${renderLicenseBadge(data.license)}
+
   * For more information on license types, please reference this website
   for additional licensing information - [https: //choosealicense.com/](https://choosealicense.com/).
 ---
 ## Contributing:
   
-  To contribute to this application, create a pull request.
-  Here are the steps needed for doing that:
-  - Fork the repo
-  - Create a feature branch (git checkout -b NAME-HERE)
-  - Commit your new feature (git commit -m 'Add some feature')
+  If you would like to contribute to this application, create a pull.
+  Here is what you need to do:
+  - Create a Fork the repo
+  - Make a feature branch (git checkout -b NAME-HERE)
+  - Commit your new feature (git commit -m 'Add some feature message')
   - Push your branch (git push)
   - Create a new Pull Request
-  Following a code review, your feature will be merged.
+  After a code review, your feature may be merged.
 ---
 ## Tests:
   ${data.test}
@@ -86,8 +82,8 @@ SO THAT I can quickly create a professional README for a new project
   ${data.author}
 ---
 ## Contact Information:
-* GitHub Username: ${data.userName}
-* GitHub Email: ${data.userEmail}
+* GitHub Username: ${data.gituser}
+* GitHub Email: ${data.giturl}
   
 `;
 }
